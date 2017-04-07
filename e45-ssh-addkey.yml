@@ -7,6 +7,6 @@
   tasks:
 
   - name: install ssh key
-    authorized_key: user=vagrant 
+    authorized_key: user=root 
                     key="{{ lookup('file', '/root/.ssh/id_rsa.pub') }}" 
                     state=present
