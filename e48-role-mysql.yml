@@ -1,0 +1,3 @@
+- hosts: all
+  roles:
+  - {role: mysql, mysql_root_db_pass: foobar, mysql_db: none, mysql_users: none }
