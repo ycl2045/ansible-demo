@@ -2,11 +2,11 @@
 - hosts: all
   sudo: yes
   gather_facts: no
-  remote_user: vagrant
+  remote_user: root
 
   tasks:
 
   - name: install ssh key
-    authorized_key: user=vagrant 
+    authorized_key: user=root
         key="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEgXUxC3zkbSOO/n4paWLirAaFyfxFpS45e94uHMZwQKv3z+bEhIT0U3I2OtrWfh+3CviUwaGGD6aU9mDx1sUx5VVeMz8ftU7FiV1LHF3K4TtsdpBTRl5QCQWE70Lmg7xPB23L71Y1yAqd7qxbxQr9A+MpMYJ1c5C6lliaFdVVayeIyAw2dRFV1EjjnHWkqdoIUxPBjLUQfY/isdh/+HWPC7OYelbEIED5CQTgqUEWTU5SjWfSKTxYbfEIPtdld2j68aggKv5x5PoUttaQvRd3I0ARWlv5X0AeFkUCtviz7gNAEkcVNgqLw1zeYKYNTgvrcwTwKiVUcI6IUo9XFEIr root@vm-10.0.106.36" 
         state=present
